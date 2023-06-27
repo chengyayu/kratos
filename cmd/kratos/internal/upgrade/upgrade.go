@@ -9,6 +9,8 @@ import (
 )
 
 // CmdUpgrade represents the upgrade command.
+// 通过指令 kratos upgrade 把框架依赖的 cli 执行文件安装到本地。
+// 这种开箱即用的处理方式，让框架使用者毋需去手动安装一个又一个依赖项。
 var CmdUpgrade = &cobra.Command{
 	Use:   "upgrade",
 	Short: "Upgrade the kratos tools",
