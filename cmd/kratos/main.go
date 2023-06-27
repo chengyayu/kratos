@@ -19,6 +19,7 @@ var rootCmd = &cobra.Command{
 	Version: release,
 }
 
+// 通过 init 初始化函数，在 main 函数执行之前，将所有子命令绑定到 rootCmd 上。
 func init() {
 	rootCmd.AddCommand(project.CmdNew)
 	rootCmd.AddCommand(proto.CmdProto)
